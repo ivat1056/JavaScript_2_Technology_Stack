@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+        ReactDOM
+            .createRoot(
+                document.getElementById("app")
+            )
+            .render(
+            <div id="items">
+                <h2>Языки программирования</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>,
+            )
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="container"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+        ReactDOM.createRoot(document.getElementById("header"))
+            .render(<h1>Hello METANIT.COM</h1>);
+        ReactDOM
+            .createRoot(
+                document.getElementById("container")
+            )
+            .render(
+            <div id="items">
+                <h2>Языки программирования</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>,
+            )
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="container"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+        const elem = ReactDOM.createRoot(document.getElementById("header"));
+        function tick() {
+            elem
+            .render(
+              <div>
+                <h1>Сервис получения времени</h1>
+                <h2>Текущее время {new Date().toLocaleTimeString()}.</h2>
+              </div>
+            );
+          }
+          setInterval(tick, 1000);
+   
+        ReactDOM.createRoot(document.getElementById("container"))
+            .render(
+            <div>
+                <h2>Начальное время {new Date().toLocaleTimeString()}.</h2>
+            </div>
+        );
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="app"></div>
+ 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ 
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+        function Person(props) {
+          return <div>
+              <p>Имя: {props.name}</p>
+              <p>Возраст: {props.age}</p>
+          </div>;
+        }
+        const personName= "Bob", personAge= 46;
+ReactDOM.createRoot(
+    document.getElementById("app")
+)
+.render(
+    <Person name={personName} age={personAge} />
+);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="app"></div>
+ 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ 
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+ 
+       function Person(props) {
+             
+    return <p><b>Name</b>: {this.props.name}  <b>Age</b>: {this.props.age}</p>;
+}
+Person.defaultProps = {name: "Tom", age: 22};
+ 
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+        .render(
+            <Person name="Tom" say={sayHello} />
+        );
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <div id="app"></div>
+ 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ 
+    <script type="text/babel" data-type="module">
+        import React from "https://esm.sh/react@19?dev";
+        import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
+ 
+ 
+        function Person(props) {
+             
+            return <p><b>Name</b>: {props.name}  <b>Age</b>: {props.age}</p>;
+        }
+        Person.defaultProps = {name: "Tom", age: 22};
+ 
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+        .render(
+            <div>
+                <Person name="Bob" age="46" />
+                <Person name="Bob" />
+                <Person />
+            </div>
+        );
+    </script>
+</body>
+</html>
